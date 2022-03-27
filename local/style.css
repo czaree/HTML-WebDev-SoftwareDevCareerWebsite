@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1E544D;
+  overflow-x: hidden;
+  font-family: 'Montserrat', arial;
+}
+
+#loopedBg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  filter: brightness(100%) opacity(0.4);
+}
+
+.page-wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.menu-button {
+  transition: all 0.5s ease-out;
+  opacity: 0.9;
+}
+
+.menu-button .btn-line {
+  width: 28px;
+  height: 2px;
+  margin: 5px 0;
+  background-color: #FFFFFF;
+  transition: all 0.5s ease-out;
+}
+
+.menu-button .close {
+  transform: rotate(180deg);
+}
+
+.menu-button.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-button.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (max-width: 768px) {
+   .navbar-collapse {
+    background-color: #022924;
+  }
+}
+
+.nav-item:hover {
+  background-color: #0F4039;
+}
+
+@media (min-width: 768px) {
+   .nav-item:hover {
+    background-color: rgba(0,0,0,0);
+  }
+}
+
+.start-btn {
+  background-color: #32C8B3;
+  border-color: #1EA290;
+}
+
+.start-btn:hover {
+  background-color: #1EA290;
+  border-color: #1D6E63;
+}
+
+.start-btn-outline {
+  color: #349E8F;
+  border-color: #349E8F;
+}
+
+.start-btn-outline:hover {
+  color: #FFFFFF;
+  background-color: #349E8F; 
+  border-color: #349E8F;
+}
+
+.search-btn-outline {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.search-btn-outline:hover {
+  color: rgb(221, 221, 221);
+  background-color: #FFFFFF;
+  border-color: #FFFFFF80;
+}
+
+.search-input {
+  background-color: #FFFFFF00 !important;
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+.search-input::placeholder {
+  color: #FFFFFF80;
+}
+
+.over-bg {
+  background-color: #E1EDEB;
+  z-index: 1;
+}
+
+.header {
+  
+}
+
+.head-img {
+  max-width: 100%;
+  position: static;
+  z-index: 0;
+  border-radius: 1rem;
+  transform: rotate(5deg);
+}
+
+.btn-main {
+  min-height: 100%;;
+  width: calc(33% + 20vw);
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+.over-2 {
+  background-color: #EAFCF9;
+  z-index: 1;
+}
+
+.footer {
+  width: 100vw;
+  min-height: 2rem;
+  position: relative;
+  bottom: 0;
+  z-index: 1;
+  background-color: #031E1ACC;
+}
+
+.quote {
+  background-color: #C6D7D4;
+}
+
+.list-fancy {
+  list-style-type: circle;
+}

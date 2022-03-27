@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- style inspiration? https://dribbble.com/shots/17292532-NuxtJS-UI-Design-1 -->
+    <link href = "local/style.css" rel = "stylesheet">
+    <!--font imports-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>careers.org</title>
+    <link rel = "icon" href = "local/images/careers-org-logo.svg" type = "image/x-icon">
+  </head>
+  <body>
+    <div class = "page-wrapper">
+      <video autoplay muted loop id = "loopedBg">
+        <source src = "local/images/dots_green_bg.mp4">
+      </video>
+    <!--nav-->
+    <nav class = "navbar navbar-expand-md navbar-dark align-items-center">
+      <div class = "container-fluid g-0 m-0 mb-2">
+        <a class = "navbar-brand ps-2" href = "index.html"><h3 class = "bi bi-person-workspace">    careers.org</h3></a>
+        <button class = "navbar-toggler menu-button border-light border-0 me-3" type = "button" data-bs-toggle = "collapse" data-bs-target = "#mainNavContent">
+          <div class = "menu-button">
+            <div class = "btn-line"></div>
+            <div class = "btn-line"></div>
+            <div class = "btn-line"></div>
+          </div>
+        </button>
+        <div class = "collapse navbar-collapse d-md-flex justify-content-md-end" id = "mainNavContent">
+          <ul class = "navbar-nav pe-md-1">
+            <li class = "nav-item ps-3 pt-1 p-md-0">
+              <a class = "nav-link active" href = "index.html">Home</a>
+            </li>
+            <li class = "nav-item ps-3 p-md-0">
+              <a class = "nav-link" href = "salaries.html">Salary</a>
+            </li>
+            <li class = "nav-item ps-3 p-md-0">
+              <a class = "nav-link" href = "education.html">Education</a>
+            </li>
+            <li class = "nav-item ps-3 p-md-0">
+              <a class = "nav-link" href = "workday.html">Workday</a>
+            </li>
+            <li class = "nav-item ps-3 pb-2 p-md-0">
+              <a class = "nav-link" href = "bibliography.html">Bibliography</a>
+            </li>
+          </ul>
+          <form class = "d-flex p-2">
+            <div class = "input-group">
+              <input type = "text" class = "form-control searchbar search-input" placeholder = "Search..." aria-label = "search bar"></input>
+              <button class = "btn btn-outline-success search-btn-outline bi bi-search" type = "button"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--main-->
+      <div class = "container pb-md-5">
+        <div class = "text-light row justify-content-center pt-5">
+          <div class = "col-11 col-lg-6 pb-5 header">
+            <h1 class = "pb-2">How to become a Software Engineer</h1>
+            <p class = "pb-3">Ever wanted to contribute to the latest innovations in computing technology? Follow the ultimate guide to getting hired as a software engineer!</p>
+            <button type = "button" class = "btn btn-success start-btn" onclick = "location.href = '#overview'">Get Started</button>
+          </div>
+          <div class = "d-none d-lg-block col-lg-6">
+            <img src = "local/images/softwaredeveloper_banner.jpg" class = "d-none d-md-block head-img">
+          </div>
+        </div>
+      </div>
+      <div class = "over-bg">
+        <div class = "container d-flex justify-content-center py-5">
+          <div class = " btn-group p-3 mx-auto align-items-end justify-content-center text-center" role = "group">
+            <button type = "button" class="btn btn-outline-success start-btn-outline btn-main" onclick = "location.href = 'salaries.html'">
+              <h1 class= "bi bi-cash-stack display-2"></h1>
+              <h4>Salaries</h4>
+            </button>
+            <button type = "button" class="btn btn-outline-success start-btn-outline btn-main" onclick = "location.href = 'Education.html'">
+              <h1 class= "bi bi-mortarboard display-2"></h1>
+              <h4>Education Requirements</h4>
+            </button>
+            <button type = "button" class="btn btn-outline-success start-btn-outline btn-main" onclick = "location.href = 'workday.html'">
+              <h1 class= "bi bi-calendar4-range display-2"></h1>
+              <h4>Average Work Day</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class = "over-2">
+        <div class = "container d-flex py-4" id = "overview">
+          <div class = "row justify-content-center">
+            <div class = "col-5">
+            </div>
+            <div class = "col-11 col-lg-9">
+              <h2 class = "fw-bold">Overview</h2>
+              <p>Software engineers develop, design, and test software applications, applying the principles of engineering to building digital programs.</p>
+              <p>The code that constructs computer applications, apps on your phone, web applications, and even clous platforms is all written by software developers. The languages most commonly used are C++, Java, and Python.</p>
+              <p>The job requires a fair amount of collaboration with other professionsal in order to develop and release products efficiently and without incident. You can expect to work closely with fellow software developers, programmers, and quality assurance specialists.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "footer text-light pt-3">
+        <div class = "container p-2 d-flex justify-content-center">
+          <p>Copyright &copy; 2021</p>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src = "local/script.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

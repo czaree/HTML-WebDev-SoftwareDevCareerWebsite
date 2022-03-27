@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- style inspiration? https://dribbble.com/shots/17292532-NuxtJS-UI-Design-1 -->
+    <link href = "local/style.css" rel = "stylesheet">
+    <!--font imports-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>careers.org</title>
+    <link rel = "icon" href = "local/images/careers-org-logo.svg" type = "image/x-icon">
+  </head>
+  <body>
+    <div class = "page-wrapper">
+      <video autoplay muted loop id = "loopedBg">
+        <source src = "local/images/dots_green_bg.mp4">
+      </video>
+    <!--nav-->
+    <nav class = "navbar navbar-expand-md navbar-dark align-items-center">
+      <div class = "container-fluid g-0 m-0 mb-2">
+        <a class = "navbar-brand ps-2" href = "index.html"><h3 class = "bi bi-person-workspace">    careers.org</h3></a>
+        <button class = "navbar-toggler menu-button border-light border-0 me-3" type = "button" data-bs-toggle = "collapse" data-bs-target = "#mainNavContent">
+          <div class = "menu-button">
+            <div class = "btn-line"></div>
+            <div class = "btn-line"></div>
+            <div class = "btn-line"></div>
+          </div>
+        </button>
+        <div class = "collapse navbar-collapse d-md-flex justify-content-md-end" id = "mainNavContent">
+          <ul class = "navbar-nav pe-md-1">
+            <li class = "nav-item ps-3 pt-1 p-md-0">
+              <a class = "nav-link" href = "index.html">Home</a>
+            </li>
+            <li class = "nav-item ps-3 p-md-0">
+              <a class = "nav-link" href = "salaries.html">Salary</a>
+            </li>
+            <li class = "nav-item ps-3 p-md-0">
+              <a class = "nav-link active" href = "education.html">Education</a>
+            </li>
+            <li class = "nav-item ps-3 p-md-0">
+              <a class = "nav-link" href = "workday.html">Workday</a>
+            </li>
+            <li class = "nav-item ps-3 pb-2 p-md-0">
+              <a class = "nav-link" href = "bibliography.html">Bibliography</a>
+            </li>
+          </ul>
+          <form class = "d-flex p-2">
+            <div class = "input-group">
+              <input type = "text" class = "form-control searchbar search-input" placeholder = "Search..." aria-label = "search bar"></input>
+              <button class = "btn btn-outline-success search-btn-outline bi bi-search" type = "button"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--main-->
+      <div class = "container pb-md-5">
+        <div class = "text-light row justify-content-center pt-5">
+          <div class = "col-11 col-lg-9 pb-5 header">
+            <h1 class = "pb-2">Education</h1>
+            <p class = "pb-3">What do you need to study or obtain before searching for jobs in the software development field?</p>
+          </div>
+        </div>
+      </div>
+      <div class = "over-bg">
+        <div class = "container d-flex justify-content-center py-5">
+          <div class = "col-11 col-lg-10">
+            <h2 class = "fw-bold text-center pb-2">College and Certification</h2>
+            <p>In general, most aspiring developers choose to go to college and recieve a bachelorr's degree in computer science, software engineering, or other closely related fields. If you wish to expand beyond the basic education offered by the first 4 years, a masters degree or PHD in the same field may also prove to be worthwhile.</p>
+            <p>However, college is often an expensive investment which some people simply do not have the ability to pay for. Another potential path is participating in a coding bootcamp. These acceleated programs train participants on how to code in key programming languages in 12-24 weeks. This allows you to pick and choose which skills to learn, as well as being able to work at your own pace. One year undergraduate certification programs may also be useful depending on whether or not you wish to add extra, more specialized skills to your toolbox.</p>
+            <h2 class = "fw-bold text-center pt-3 pb-2">Common Programming Languages</h2>
+            <p>Software engineering programs tend to focus on teaching the following languages:</p>
+            <div class = "ps-3">
+              <ul class = "list-fancy">
+                <li>Java</li>
+                <li>Python</li>
+                <li>C++/C</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+            <p>While more rare, languages such as Ruby, PERL, or SQL may also be potential subjects depending on what field you choose to specialize in.</p>
+          </div>
+        </div>
+      </div>
+      <div class = "over-2">
+        <div class = "container d-flex justify-content-center py-4" id = "overview">
+          <div class = "col-11 col-lg-10">
+            <h2 class = "fw-bold text-center pt-3 pb-2">Going Beyond Education</h2>
+            <p>After recieving a thorough education, it's finally time to start searching for a job! However, there are several important steps you should take before diving into job offers in order to ensure success.</p>
+            <h4>Build Your Portfolio</h4>
+            <p>During a software engineering course, students are encouraged to begin building a portfolio of their best work, including classwork, internship projects, and freelance projects. As your skills expand, your portfolio can be updated with more advanced projects in order to reflect your current expertise. Having a collection of projects that you can show to potential employers in order to display your strengths is invaluable to landing a job.</p>
+            <p>At the end of the day, getting a job in a field that heavily involves programming is almost never about what you learned in school. What companies are searching for is ingenuity and skill in how you apply what you learned.</p> 
+            <h4>Take On Internships</h4>
+            <p>Internships are invaluable when it comes to gaining extra experience and networking within the tech industry. Many major computer science and software engineering programs provide internship oppertunities for students enrolled in their courses. Or, other oppertunities are also posted online through companies' websites or job boards. Even though you're more likely than not getting paid, internships are a worthwhile source of experience if you can afford it.</p>
+          </div>
+        </div>
+      </div>
+      <div class = "footer text-light pt-3">
+        <div class = "container p-2 d-flex justify-content-center">
+          <p>Copyright &copy; 2021</p>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src = "local/script.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
